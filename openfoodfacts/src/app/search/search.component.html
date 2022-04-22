@@ -1,8 +1,8 @@
 <h1>Search</h1>
 
 <p>
-    <input type="text" #query>
-    <button (click)="submit(query)">Search</button>
+    <input type="text" #query> <!--PUNTO 3-->
+    <button (click)="submit(query)">Search</button> <!--PUNTO 3-->
 </p>
 
 <div *ngIf="results">
@@ -12,9 +12,9 @@
 
                 <div class="content">
                     <img src="{{t.image_url}}" class="img-fluid" alt="">
-                    <p>{{t.brands}}</p>
+                    <!--<p>{{t.brands}}</p>-->
                     <a [routerLink]="['/item', t.id]">
-                        {{ t.id }}
+                        {{ t.brands }} <!--PUNTO 5-->
                     </a>
                 </div>
 

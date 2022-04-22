@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { FoodService } from '../food.service';
+import { FoodService } from '../food.service'; //IMPORTARE IL SERVIZIO (PUNTO 4A)
 
 @Component({
   selector: 'app-search',
@@ -12,11 +12,11 @@ export class SearchComponent implements OnInit {
   obsProduct: Observable<Object> | undefined;
   results: any;
 
-  constructor(public food: FoodService) {}
+  constructor(public food: FoodService) {} //INSERIRE IL SERVIZIO APPENA IMPORTATO PER POTERLO UTILIZZARE (PUNTO 4A)
 
   ngOnInit(): void {}
 
-  submit(query: HTMLInputElement): void {
+  submit(query: HTMLInputElement): void { //INIZIO PUNTO 4 TUTTO QUESTO BLOCCO
     if (!query.value) {
       return;
     }
@@ -26,7 +26,7 @@ export class SearchComponent implements OnInit {
       this.results = data;
       console.log(this.results);
     });
-  }
+  } //FINE PUNTO 4
 
   renderResults(res: any): void {
     this.results = null;

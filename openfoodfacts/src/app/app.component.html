@@ -1,7 +1,8 @@
-<h1>OpenFoodFacts</h1>
+<h1>OpenFoodFacts</h1> <!--PUNTO 1-->
 
 <nav>
-  <a routerLink="search" routerLinkActive="active">Search</a>
+  <a [routerLink]="['/search']" routerLinkActive="active">Search</a>
 </nav>
 
-<router-outlet></router-outlet>
+<!--<app-search></app-search> (DA CANCELLARE ALLA FINE, PUNTO 3)-->
+<router-outlet></router-outlet> <!--SERVE PER UTILIZZARE IL ROUTING DI ANGULAR (PUNTO 1)-->

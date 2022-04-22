@@ -4,8 +4,8 @@ import { ItemComponent } from './item/item.component';
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
-  { path: 'search', component: SearchComponent },
-  { path: 'item/:id', component: ItemComponent },
+  { path: 'search', component: SearchComponent }, //PUNTO 2 (DA FARE: NG G C NOMECOMPONENTE)
+  { path: 'item/:id', component: ItemComponent }, //PUNTO 2 (DA FARE: NG G C NOMECOMPONENTE)
 ];
 
 @NgModule({
